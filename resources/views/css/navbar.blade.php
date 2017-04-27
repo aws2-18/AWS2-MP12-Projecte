@@ -7,7 +7,7 @@
                     <ul class="nav navbar-nav">
                         <li>
                             <a class="navbar-brand">
-                            Multimedia Center
+                            <p id="nav">Multimedia Center</p>
                             </a>   
                         </li>          
                     </ul>       
@@ -17,12 +17,12 @@
                     <ul class="nav navbar-nav">
                         <li>
                             <a class="navbar-brand">
-                            Logo
+                            <p id="nav">Logo</p>
                             </a>   
                         </li>   
                         <li>
                     	<form class="form-inline navbar-form pull-right">
-                    	<input class="form-control" type="text" placeholder="Search">
+                    	<input class="form-control" type="text" placeholder="Search" id="search">
                     	<button class="btn btn-success-outline" type="submit">Search </button>
                     	</form>
                    	</li>       
@@ -30,30 +30,44 @@
                     <ul class="nav navbar-nav navbar-right">
                     
                    	<li>
-                   		<a class="navbar-brand">Iniciar sesion</a>
+                   		<a class="navbar-brand">
+                   		<p id="nav2">Iniciar sesion</p></a>
                    	</li>
 
                    	<li>
-                   		<a class="navbar-brand">Registro</a>
+                   		<a class="navbar-brand">
+                   		<p id="nav2">Registro</p></a>
                    	</li>
             </div> 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
                     <ul class="nav navbar-nav">
-                        <li>
+                        <li id="menu">
                             <a class="navbar-brand">
-                            Inicio
+                            <p id="nav">
+                            INICIO
+                            </p>
                             </a>   
                         </li>
-                        <li>
-                        	<a class="navbar-brand">Videos</a>
+                        <li id="menu">
+                        	<a class="navbar-brand">
+                        	<p id="nav">
+                        	VIDEOS
+                        	</p>
+                        	</a>
                         </li>
-                        <li>
-                        	<a class="navbar-brand">Categorias</a>
+                        <li id="menu">
+                        	<a class="navbar-brand">
+                        	<p id="nav">CATEGORIAS
+                        	</p></a>
+                        </li>
+                        <li id="menu">
+                        	<a class="navbar-brand">
+                        	<p id="nav">STREAMING</p></a>
                         </li>          
                     </ul>   
                     <ul class="nav navbar-nav navbar-right">
                     <li>
-                    	<a class="navbar-brand">Albums</a>
+                    	<a class="navbar-brand"><p id="nav">FOTOS Y GIF'S</p></a>
                    	</li>
 
         </div>
