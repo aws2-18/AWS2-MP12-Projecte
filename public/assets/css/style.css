@@ -13,3 +13,143 @@
 #navbar1{
 	background-color: yellow;
 }
+/*
+
+ Arriba navbar
+
+ Abajo Modal Login
+
+*/
+#content{
+	width: 180%;
+	height: 65%;
+	margin-left: -45%;
+	background-color: black;
+	color: orange;
+	float: left;
+}
+#conolog{
+	color:white;
+	font-size: 38px;
+}
+#cruz{
+	width: 200px;
+	height: 200px;
+}
+.close{
+	color:white;
+}
+.panel {
+	background-color: black;
+	margin-top: 5%;
+}
+#email{
+	height: 8%;
+	width: 200%;
+	background-color: #2b2a28;
+	color: #757575;
+	font-size: 22px;
+}
+#password{
+	height: 8%;
+	width: 200%;
+	background-color: #2b2a28;
+	color: white;
+	font-size: 22px;
+}
+#remember{
+	height: 11%;
+	width: 200%;
+	background-color: #101010;
+	color: white;
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border: 1px solid #D5D5D5;
+}
+#iniciarsesion{
+	width: 146%;
+	color: black;
+	height:  9%;
+}
+#panelderecha{
+	margin-top: 15%;
+}
+#supreg{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+#reginfo{
+	font-size: 17px;
+	color: grey;
+	text-align: center;
+}
+ 
+/* Boton iniciar sesion */
+
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: orange;
+}
+ 
+.btn-ttc:hover {
+ background-color:  #FFB200;
+}
+
+
+.btn-ttb,
+.btn-ttb:hover,
+.btn-ttb:active {
+	color: #ACACAC;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #3F3F3F;
+	width: 100%;
+}
+.btn-ttb:hover {
+	background-color: #7D7C7C;
+}
+ul{
+  list-style-type: none;
+
+ }
+.img{
+	margin-left: -30%;
+}
+#muchomas{
+	margin-top: 3%;
+}
+#registro{
+
+}
+#remember2{
+	color:orange;
+}
+@media (max-width: @screen-xs-min) {
+  .modal-xs { width: @modal-sm; }
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 25%;
+  background: #242424;
+  color: white;
+}
+.footer p{
+	color: orange;
+}
+#navbarfooter{
+	height: 20%;
+}

@@ -30,3 +30,7 @@ Route::get('/partners','Footer@getPartners');
 Route::get('/ayuda','Footer@getAyuda');
 Route::get('/blog','Footer@getBlog');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
