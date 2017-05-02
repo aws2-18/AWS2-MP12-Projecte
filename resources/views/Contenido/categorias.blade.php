@@ -1,1 +1,0 @@
-<h1>Listado de categorias - View categorias</h1>

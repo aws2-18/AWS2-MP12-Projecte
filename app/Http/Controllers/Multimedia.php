@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Videos;
 class Multimedia extends Controller
 {
 
     public function getVideos(){
-    	return view('Contenido.videos');
+    	$arrayVideos = Videos::all();
+    	return view('Contenido.videos', array("arrayVideos"=>$arrayVideos));
     }
 
     public function getCategorias(){

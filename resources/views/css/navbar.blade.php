@@ -1,22 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<head>
-  <script type="text/javascript">
-    $(document).ready(function() {   
-            var sideslider = $('[data-toggle=collapse-side]');
-            var sel = sideslider.attr('data-target');
-            var sel2 = sideslider.attr('data-target-2');
-            sideslider.click(function(event){
-                $(sel).toggleClass('in');
-                $(sel2).toggleClass('out');
-            });
-        });
-  </script>
-  </head>
-<style>
-
-</style>
-
 <div id="header">
 <header role="banner" class="navbar navbar-inverse">
   <div class="container">
@@ -26,14 +7,16 @@
     <div class="navbar-inverse side-collapse in">
       <nav role="navigation" class="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#Home">Multimedia Center</a></li>
-
-                    </li>
-            </ul>
+          <li>
+            <a class="navbar-brand">
+              <p id="nav2">Multimedia Center</p>
+            </a>
+          </li>
+         </ul>
       </nav>
           <nav role="navigation" class="navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#Home">Logo</a></li>
+              <li><a class="navbar-brand"><p id="nav2">Logo</p></a></li>
               <li>
                 <form class="form-inline navbar-form pull-right">
                   <input class="form-control" type="text" placeholder="Search" id="search">
@@ -43,7 +26,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                           <li><a class="navbar-brand" data-toggle="modal" data-target="#myModal">
-                <p id="nav2">Iniciar sesion</p></a>
+                <p id="nav2">INICIAR SESION</p></a>
                   <!-- MODAL -->
                   <div class="modal fade" id="myModal" role="dialog">
                       <div class="modal-dialog">
@@ -135,19 +118,19 @@
                           </div>
                         </div>
                       </div>
-                      <li><a class="navbar-brand"><p id="nav2">Registro</p></a>
+                      <li><a class="navbar-brand"><p id="nav2">REGISTRO</p></a>
                       </li>
             </ul>
           </nav>
            <nav role="navigation" class="navbar-collapse">
              <ul class="nav navbar-nav">
-              <li><a href="#Home">INICIO</a></li>
-              <li><a href="#Home">VIDEOS</a></li>
-              <li><a href="#Home">CATEGORIAS</a></li>
-              <li><a href="#Home">STREAMING</a></li>
+              <li><a class="navbar-brand"><p id="submenu">INICIO</p></a></li>
+              <li><a class="navbar-brand"><p id="submenu">VIDEOS</p></a></li>
+              <li><a class="navbar-brand"><p id="submenu">CATEGORIAS</p></a></li>
+              <li><a class="navbar-brand"><p id="submenu">STREAMING</p></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#Home">FOTOS Y GIF'S</a></li>
+              <li><a class="navbar-brand"><p id="nav2">FOTOS Y GIF'S</p></a></li>
             </ul>
           </nav>
 
@@ -158,45 +141,5 @@
 
 
 
-<div class="container side-collapse-container">
-  <div class="row">
-    <h1></h1>
-    <p>This is a side opening nav demonstration</p>
-    <p>Make your browser smaller and the top menu wil become into a lateral slider menu</p>
-  </div>
-</div>
-
-<div id="wrapper">
-  <div id="footer">
-    <div class="footerFloat">
-      <h4>Información</h4>
-      <p>Terminos y condiciones</p>
-      <p>Política de privacidad</p>
-      <p>DMCA</p>
-      <p>2257</p>
-    </div>
-    <div class="footerFloat">
-      <h4>Trabaja con nosotros</h4>
-      <p>Terminos y condiciones</p>
-      <p>Política de privacidad</p>
-      <p>DMCA</p>
-      <p>2257</p>
-    </div>
-    <div class="footerFloat">
-      <h4>Apoyo y ayuda</h4>
-      <p>Terminos y condiciones</p>
-      <p>Política de privacidad</p>
-      <p>DMCA</p>
-      <p>2257</p>
-    </div>
-    <div class="footerFloat">
-      <h4>Descubre</h4>
-      <p>Terminos y condiciones</p>
-      <p>Política de privacidad</p>
-      <p>DMCA</p>
-      <p>2257</p>
-    </div>
-  </div>
-</div> 
 
 

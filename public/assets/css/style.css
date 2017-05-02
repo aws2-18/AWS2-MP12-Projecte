@@ -1,6 +1,7 @@
 body {
           padding-top: 50px;
           position: relative;
+          color: black;
       }
       
       pre {
@@ -19,7 +20,7 @@ body {
           }
           .side-collapse {
               top:50px;
-              bottom:0;
+              bottom:10;
               left:0;
               width:200px;
               position:fixed;
@@ -29,14 +30,27 @@ body {
           .side-collapse.in {
               width:0;
           }
+          #footer{
+            height: 150px;
+            z-index: -10;
+            overflow:  scroll;
+          }
+          #header{
+            z-index: 10;
+          }
+          .footerfloat{
+
+          }
       }
 
 #header {
     overflow: hidden;
-    
-    position: absolute; /* Set the navbar to fixed position */
+    position: relative;
+     /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    margin-top: -50px;
+
 }      
 #content{
   width: 180%;
@@ -155,7 +169,7 @@ ul{
 @media all and (min-width: 950px) {
     #footer {
 
-        width: 980px;
+        width: 50%;
         margin: auto;
     } 
     .footerFloat {
@@ -171,6 +185,7 @@ ul{
 }
 #footer p{
   color: orange;
+
 }
 #footer h4{
       color: white;
@@ -179,4 +194,12 @@ ul{
     background-color: #242424;
     width: 100%;
     overflow:hidden;
+    bottom: 0;
+    position: absolute;
+
+
+}
+
+#submenu{
+  padding-right: 60px;
 }

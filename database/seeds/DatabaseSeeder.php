@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use App\Videos;
 class DatabaseSeeder extends Seeder
 {
 	 private $arrayUsers = array(
@@ -17,6 +18,18 @@ class DatabaseSeeder extends Seeder
             'imagen' => 'foto.png',
             )
         );
+     private $arrayVideos = array(
+        array(
+            'titulo' => 'Partida epica CSGO',
+            'usuario' => 'Lluis',
+            'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
+            ),
+        array(
+            'titulo' => 'Gatos feos',
+            'usuario' => 'Victor',
+            'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
+            )
+        );
     /**
      * Run the database seeds.
      *
@@ -26,6 +39,9 @@ class DatabaseSeeder extends Seeder
     {
         self::seedUsers();
        $this->command->info('Tabla usuarios inicializada con exito');
+
+       self::seedvideos();
+       $this->command->info('Tabla Videos inicializada con exito');
     }
      public function seedUsers(){
               DB::table('users')->delete();
@@ -43,4 +59,15 @@ class DatabaseSeeder extends Seeder
                  $u->save();
                 }
             }
+
+    public function seedvideos(){
+        DB::table('videos')->delete();
+        foreach ($this->arrayVideos as $video){
+            $v = new Videos;
+            $v->titulo = $video['titulo'];
+            $v->usuario = $video['usuario'];
+            $v->url = $video['url'];
+            $v->save();
+        }
+    }
 }
