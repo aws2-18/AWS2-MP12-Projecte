@@ -1,89 +1,107 @@
-#search{
-	width:400px;
-}
-#nav{
-	color: white;
-}
-#nav2{
-	color: grey;
-}
-#menu{
-	padding-right: 80px;
-}
-#navbar1{
-	background-color: yellow;
-}
-/*
+body {
+          padding-top: 50px;
+          position: relative;
+      }
+      
+      pre {
+          tab-size: 8;
+      }
+      
+      @media screen and (max-width: 768px) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+              top:50px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse.in {
+              width:0;
+          }
+      }
 
- Arriba navbar
-
- Abajo Modal Login
-
-*/
+#header {
+    overflow: hidden;
+    
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}      
 #content{
-	width: 180%;
-	height: 65%;
-	margin-left: -45%;
-	background-color: black;
-	color: orange;
-	float: left;
+  width: 180%;
+  height: 65%;
+  margin-left: -45%;
+  background-color: black;
+  color: orange;
+  float: left;
 }
 #conolog{
-	color:white;
-	font-size: 38px;
+  color:white;
+  font-size: 38px;
 }
 #cruz{
-	width: 200px;
-	height: 200px;
+  width: 200px;
+  height: 200px;
 }
 .close{
-	color:white;
+  color:white;
 }
 .panel {
-	background-color: black;
-	margin-top: 5%;
+  background-color: black;
+  margin-top: 5%;
 }
 #email{
-	height: 8%;
-	width: 200%;
-	background-color: #2b2a28;
-	color: #757575;
-	font-size: 22px;
+  height: 8%;
+  width: 200%;
+  background-color: #2b2a28;
+  color: #757575;
+  font-size: 22px;
 }
 #password{
-	height: 8%;
-	width: 200%;
-	background-color: #2b2a28;
-	color: white;
-	font-size: 22px;
+  height: 8%;
+  width: 200%;
+  background-color: #2b2a28;
+  color: white;
+  font-size: 22px;
 }
 #remember{
-	height: 11%;
-	width: 200%;
-	background-color: #101010;
-	color: white;
-	border-radius: 6px 6px 6px 6px;
-	-moz-border-radius:6px 6px 6px 6px;
-	-webkit-border-radius: 6px 6px 6px 6px;
-	border: 1px solid #D5D5D5;
+  height: 11%;
+  width: 200%;
+  background-color: #101010;
+  color: white;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius:6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border: 1px solid #D5D5D5;
 }
 #iniciarsesion{
-	width: 146%;
-	color: black;
-	height:  9%;
+  width: 146%;
+  color: black;
+  height:  9%;
 }
 #panelderecha{
-	margin-top: 15%;
+  margin-top: 15%;
 }
 #supreg{
-	font-size: 20px;
-	color: white;
-	text-align: center;
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 #reginfo{
-	font-size: 17px;
-	color: grey;
-	text-align: center;
+  font-size: 17px;
+  color: grey;
+  text-align: center;
 }
  
 /* Boton iniciar sesion */
@@ -106,50 +124,59 @@
 .btn-ttb,
 .btn-ttb:hover,
 .btn-ttb:active {
-	color: #ACACAC;
-	font-size: 24px;
-	font-weight: bold;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-	background-color: #3F3F3F;
-	width: 100%;
+  color: #ACACAC;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #3F3F3F;
+  width: 100%;
 }
 .btn-ttb:hover {
-	background-color: #7D7C7C;
+  background-color: #7D7C7C;
 }
 ul{
   list-style-type: none;
 
  }
 .img{
-	margin-left: -30%;
+  margin-left: -30%;
 }
 #muchomas{
-	margin-top: 3%;
+  margin-top: 3%;
 }
 #registro{
 
 }
 #remember2{
-	color:orange;
-}
-@media (max-width: @screen-xs-min) {
-  .modal-xs { width: @modal-sm; }
+  color:orange;
 }
 
-/* FOOTER */
+/*FOOTER*/
+@media all and (min-width: 950px) {
+    #footer {
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 25%;
-  background: #242424;
-  color: white;
+        width: 980px;
+        margin: auto;
+    } 
+    .footerFloat {
+    width: 25%;
+    float: left;
+    }
+    #footer p{
+      color: orange;
+    }
+    #footer h4{
+      color: white;
+    }
 }
-.footer p{
-	color: orange;
+#footer p{
+  color: orange;
 }
-#navbarfooter{
-	height: 20%;
+#footer h4{
+      color: white;
+    }
+#wrapper {
+    background-color: #242424;
+    width: 100%;
+    overflow:hidden;
 }
