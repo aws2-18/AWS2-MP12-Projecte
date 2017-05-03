@@ -7,7 +7,9 @@ body {
       pre {
           tab-size: 8;
       }
-      
+#email2{
+  width: 150%;
+}
       @media screen and (max-width: 768px) {
           .side-collapse-container{
               width:100%;
@@ -40,6 +42,9 @@ body {
           }
           .footerfloat{
 
+          }
+          #email2{
+            width: 50%;
           }
       }
 
@@ -182,6 +187,7 @@ ul{
     #footer h4{
       color: white;
     }
+
 }
 #footer p{
   color: orange;
@@ -195,7 +201,6 @@ ul{
     width: 100%;
     overflow:hidden;
     bottom: 0;
-    position: absolute;
 
 
 }
@@ -203,3 +208,44 @@ ul{
 #submenu{
   padding-right: 60px;
 }
+#registrocontenido{
+  background-color: orange
+  height:;
+}
+
+/*REGISTRO CSS*/
+#registrate{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+#experiencia{
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -3%;
+}
+
+#name2{
+  height: 5%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+}
+#password2{
+  height: 5%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+}
+#email2{
+  font-size: 18px;
+  height: 5%;
+  width: 100%;
+  background-color: black;
+}
+
+}
+

@@ -34,3 +34,7 @@ Route::get('/blog','Footer@getBlog');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//Registro
+Route::get('/registro','Auth@getRegistro');
