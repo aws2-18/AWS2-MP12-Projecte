@@ -50,3 +50,6 @@ Route::put('/editar/usuario/postEdit/{id}','Auth@postEdit');
 //Contacto
 Route::get('contacta', 'PagesController@getContact');
 Route::post('contacta', 'PagesController@postContact');
+//Imagen carpeta
+Route::get('upload','uploadController@index');
+Route::post('store','uploadController@store');
