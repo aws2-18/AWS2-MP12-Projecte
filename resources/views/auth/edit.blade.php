@@ -39,6 +39,10 @@
             <label id="white">Codigo Postal</label>
             <input type="number" name="cp" value="{{$Usuario->cp}}" required>
             </div>
+            <div>
+            <label id="white">Seleccionar archivo</label>
+            <input type="file" name="imagen">
+            </div>
 
             <input type="submit" value="Actualizar perfil" class="btn btn-primary">
         </form>

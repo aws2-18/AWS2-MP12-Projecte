@@ -36,7 +36,7 @@
                 </dl>
                 </div>
                 <dl class="dl-horizontal">
-                    <dd>{{$Usuario->imagen}}</dd>
+                    <dd><img src="/img/{{Auth::user()->imagen}}" width="200"></dd>
                 </dl>
                 <hr>
 

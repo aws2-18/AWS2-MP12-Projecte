@@ -20,8 +20,10 @@ class Auth extends Controller
     }
     public function postEdit(Request $request, $id){
          $Usuario = User::find($id);
-        if( $request->has("name") || $request->has("email") || $request->has("pais") || $request->has("provincia") || $request->has("ciudad") || $request->has("direccion") || $request->has("cp"))
-         {
+         $Url = ('/public/img/');
+        if( $request->has("name") || $request->has("email") || $request->has("pais") || $request->has("provincia") || $request->has("ciudad") || $request->has("direccion") || $request->has("cp") || $request->has("imagen"))
+         {	
+
             $Usuario->name = $request->input("name");
             $Usuario->email = $request->input("email");
             $Usuario->pais = $request->input("pais");
@@ -29,6 +31,7 @@ class Auth extends Controller
             $Usuario->ciudad = $request->input("ciudad");
             $Usuario->direccion = $request->input("direccion");
             $Usuario->cp = $request->input("cp");
+            $Usuario->imagen = $request->input("imagen");
             $Usuario->save();
             Session::flash('success', '¡Campos actualizados con exito!');
             return view('auth.edit',array('Usuario'=>$Usuario, 'id'=>$id));
