@@ -25,9 +25,9 @@ class DatabaseSeeder extends Seeder
             'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
             ),
         array(
-            'titulo' => 'Gatos feos',
+            'titulo' => 'Gatos y Pepinos',
             'usuario' => 'Victor',
-            'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
+            'url' => '/videos/gatosvspepinos.mp4',
             )
         );
     /**

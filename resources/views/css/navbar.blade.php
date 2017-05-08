@@ -153,7 +153,7 @@
            <nav role="navigation" class="navbar-collapse">
              <ul class="nav navbar-nav">
               <li><a class="navbar-brand" href="/"><p id="submenu">INICIO</p></a></li>
-              <li><a class="navbar-brand" href="/videos"><p id="submenu">VIDEOS</p></a></li>
+              <li><a class="navbar-brand" href="/vids"><p id="submenu">VIDEOS</p></a></li>
               <li><a class="navbar-brand"><p id="submenu">CATEGORIAS</p></a></li>
               <li><a class="navbar-brand"><p id="submenu">STREAMING</p></a></li>
             </ul>

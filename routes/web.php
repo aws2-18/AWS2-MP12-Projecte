@@ -17,7 +17,10 @@ Route::get('/', function () {
 });
 
 //Pagina web videos
-Route::get('/videos','Multimedia@getVideos');
+//Route::get('/videos','Multimedia@getVideos');
+Route::get("/vids",'Multimedia@getVideos');
+
+
 //Pagina web categorias (videos)
 Route::get('/categorias','Multimedia@getCategorias');
 //Pagina web albums(fotos+gifs)
