@@ -33,8 +33,17 @@ Route::get('/blog','Footer@getBlog');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@getHome')->name('home');
 
 
 //Registro
 Route::get('/registro','Auth@getRegistro');
+//Panel del Usuario
+Route::get('/usuario/{id}','Auth@getPanel');
+//View para cambiar datos
+Route::get('/editar/usuario/{id}','Auth@getEdit');
+//View a la que llamamos para que ejecute la funcion que cambia los datos
+Route::put('/editar/usuario/postEdit/{id}','Auth@postEdit');
+//Contacto
+Route::get('contacta', 'PagesController@getContact');
+Route::post('contacta', 'PagesController@postContact');

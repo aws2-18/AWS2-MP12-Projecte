@@ -1,15 +1,175 @@
 body {
           padding-top: 50px;
           position: relative;
-          color: black;
       }
       
       pre {
           tab-size: 8;
       }
-#email2{
-  width: 150%;
+
+/*VIEW CONTACTO */
+#white{
+  color: white;
 }
+#contactarcon{
+  color:white;
+}
+#nombre{
+  height: 6%;
+  font-size: 20px;
+   color:#F5353B;
+  border-color: #F5353B;
+  background-color: black;
+}
+#apellidos{
+  height: 6%;
+  font-size: 20px;
+   color:#F5353B;
+  border-color: #F5353B;
+  background-color: black;
+}
+#email3{
+  height: 6%;
+  font-size: 20px;
+   color:#F5353B;
+  border-color: #F5353B;
+  background-color: black;
+}
+#subject{
+  height: 6%;
+  font-size: 20px;
+   color:#F5353B;
+  border-color: #F5353B;
+  background-color: black;
+}
+#message{
+  height: 6%;
+  font-size: 20px;
+   color:#F5353B;
+  border-color: #F5353B;
+  background-color: black;
+}
+#contacto{
+  height: 6%;
+  font-size: 20px;
+  color:#F5353B;
+  border-color: #F5353B;
+  background-color: black;
+}
+#iframe{
+  width: 400px;
+  height: 400px;
+}
+.btn-enviarcorreo,
+.btn-enviarcorreo:hover,
+.btn-enviarcorreo:active {
+  color: #F5353B;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  width: 30%;
+  border-color: #F5353B;
+  background-color: black;
+}
+/*VIEW REGISTRO */
+#registrate{
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+#experiencia{
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+  }
+#name2{
+  height: 10%;
+  width: 200%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
+}
+#password2{
+  height: 10%;
+  width: 200%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
+}
+#email2{
+  font-size: 18px;
+  height: 10%;
+  width: 200%;
+  background-color: black;
+  border-color: #F5353B;
+}
+#password-confirm2{
+  font-size: 18px;
+  height: 10%;
+  width: 200%;
+  background-color: black;
+  border-color: #F5353B;
+}
+#registropanel{
+  background-color: black;
+  height: 65%;
+  border-color: #F5353B;
+}
+.btn-registro,
+.btn-registro:hover,
+.btn-registro:active {
+  height: 10%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #3F3F3F;
+  width: 160%;
+  border-color: #F5353B;
+}
+#alregistrar{
+  color: #F5353B;
+}
+#haymuchomas{
+  font-size: 50px;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+
+}
+#ventajas{
+  font-size: 18px;
+  margin-left: -10px;
+  color: white;
+  font-family: Arial;
+
+}
+#panelizquierdaregistro{
+  margin-top: 20%;
+}
+/*PANEL USUARIO*/
+#derechaEdit{
+  float: right;
+}
+#header {
+    overflow: hidden;
+    position: relative;
+    background-color: #2E2E2E;
+     /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    margin-top: -50px;
+
+}    
+.navbar-header{
+  background-color: black;
+}
+
+body{
+  background-color: #2E2E2E;
+}
+
       @media screen and (max-width: 768px) {
           .side-collapse-container{
               width:100%;
@@ -43,26 +203,66 @@ body {
           .footerfloat{
 
           }
+          #registrate{
+            color: white;
+            font-size: 22px;
+            text-align: center;
+          }
+          #name2{
+            height: 5%;
+            width: 100%;
+            background-color: black;
+            color: #757575;
+            font-size: 18px;
+          }
+          #password2{
+            height: 5%;
+            width: 100%;
+            background-color: black;
+            color: #757575;
+            font-size: 18px;
+          }
           #email2{
-            width: 50%;
+            font-size: 18px;
+            height: 5%;
+            width: 100%;
+            background-color: black;
+          }
+          #password-confirm2{
+            font-size: 18px;
+            height: 5%;
+            width: 100%;
+            background-color: black;
+          }
+          #registropanel{
+            background-color: black;
+          }
+          .btn-registro,
+          .btn-registro:hover,
+          .btn-registro:active {
+            color: #ACACAC;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+            background-color: #3F3F3F;
+            width: 100%;
+            height: 15%;
+          }
+          #alregistrar{
+            color: #F5353B;
+          }
+          #iframe{
+            width: 300px;
+            height: 300px;
           }
       }
-
-#header {
-    overflow: hidden;
-    position: relative;
-     /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    margin-top: -50px;
-
-}      
+  
 #content{
   width: 180%;
   height: 65%;
   margin-left: -45%;
   background-color: black;
-  color: orange;
+  color: #F5353B;
   float: left;
 }
 #conolog{
@@ -132,11 +332,11 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: orange;
+  background-color: red;
 }
  
 .btn-ttc:hover {
- background-color:  #FFB200;
+ background-color:  #F5353B;
 }
 
 
@@ -167,7 +367,7 @@ ul{
 
 }
 #remember2{
-  color:orange;
+  color:#F5353B;
 }
 
 /*FOOTER*/
@@ -182,7 +382,7 @@ ul{
     float: left;
     }
     #footer p{
-      color: orange;
+      color: #F5353B;
     }
     #footer h4{
       color: white;
@@ -190,14 +390,14 @@ ul{
 
 }
 #footer p{
-  color: orange;
+  color: #F5353B;
 
 }
 #footer h4{
       color: white;
     }
 #wrapper {
-    background-color: #242424;
+    background-color: black;
     width: 100%;
     overflow:hidden;
     bottom: 0;
@@ -208,44 +408,8 @@ ul{
 #submenu{
   padding-right: 60px;
 }
-#registrocontenido{
-  background-color: orange
-  height:;
-}
 
 /*REGISTRO CSS*/
-#registrate{
-  color: white;
-  font-size: 45px;
-  text-align: center;
-}
-#experiencia{
-  color: grey;
-  font-size: 15px;
-  text-align: center;
-  margin-top: -3%;
-}
-
-#name2{
-  height: 5%;
-  width: 100%;
-  background-color: black;
-  color: #757575;
-  font-size: 18px;
-}
-#password2{
-  height: 5%;
-  width: 100%;
-  background-color: black;
-  color: #757575;
-  font-size: 18px;
-}
-#email2{
-  font-size: 18px;
-  height: 5%;
-  width: 100%;
-  background-color: black;
-}
 
 }
 

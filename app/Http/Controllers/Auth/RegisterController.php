@@ -6,7 +6,7 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Image;
 class RegisterController extends Controller
 {
     /*
@@ -51,6 +51,7 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'featured_image' => 'sometimes|image'
         ]);
     }
 
@@ -66,6 +67,14 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            if($request->hasFile('featured_image')){
+                $image = $request->file('featured_image');
+                $filename = time() . '.' . $image->getClientOriginalExtension();
+                $location = public_path('images/'. $filename);
+                Image::make($image)->resize(300,200)->save($location);
+
+                'image' => $data['filename'];
+            }
         ]);
     }
 }

@@ -18,12 +18,12 @@ class CreateUsersTable extends Migration
             $table->string('name',20);
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('pais',20);
-            $table->string('provincia',20);
-            $table->string('ciudad',20);
-            $table->string('direccion',20);
-            $table->integer('cp');
-            $table->string('imagen',80);
+            $table->string('pais',20)->default('none');
+            $table->string('provincia',20)->default('none');
+            $table->string('ciudad',20)->default('none');
+            $table->string('direccion',20)->default('none');
+            $table->integer('cp')->default(00000);
+            $table->string('imagen',80)->default('none');
             $table->rememberToken();
             $table->timestamps();
         });

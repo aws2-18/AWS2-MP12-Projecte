@@ -1,6 +1,6 @@
 
 <div id="header">
-<header role="banner" class="navbar navbar-inverse">
+<header role="banner" class="navbar navbar-inverse" id="navcolor">
   <div class="container">
     <div class="navbar-header">
       <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -10,7 +10,7 @@
         <ul class="nav navbar-nav">
           <li>
             <a class="navbar-brand">
-              <p id="nav2">Multimedia Center</p>
+              <li><p id="nav2">Multimedia Center</p></li>
             </a>
           </li>
          </ul>
@@ -25,6 +25,32 @@
                 </form>
               </li>
             </ul>
+            
+            @if(Auth::check())
+            <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown">{{$name = Auth::user()->name}}<span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+            
+                <li><a href="{{ url('/usuario/' . $id=Auth::user()->id) }}">Perfil</a></li>
+      
+                <li role="separator" class="divider"></li>
+                <li> 
+                  <a href="{{url('/logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        CERRAR SESION
+                  </a>
+                  
+                  <form id="logout-form" action="{{url('/logout')}}" method="POST" style="display:none">
+                  {{csrf_field()}}
+                  
+                  </form>
+                </li>
+                
+              </ul>
+            </li>
+            </ul>
+            
+            </ul>
+            @else
             <ul class="nav navbar-nav navbar-right">
                           <li><a class="navbar-brand" data-toggle="modal" data-target="#myModal">
                 <p id="nav2">INICIAR SESION</p></a>
@@ -119,14 +145,15 @@
                           </div>
                         </div>
                       </div>
-                      <li><a class="navbar-brand"><p id="nav2">REGISTRO</p></a>
+                      <li><a class="navbar-brand" href="/registro"><p id="nav2">REGISTRO</p></a>
                       </li>
             </ul>
+            @endif
           </nav>
            <nav role="navigation" class="navbar-collapse">
              <ul class="nav navbar-nav">
-              <li><a class="navbar-brand"><p id="submenu">INICIO</p></a></li>
-              <li><a class="navbar-brand"><p id="submenu">VIDEOS</p></a></li>
+              <li><a class="navbar-brand" href="/"><p id="submenu">INICIO</p></a></li>
+              <li><a class="navbar-brand" href="/videos"><p id="submenu">VIDEOS</p></a></li>
               <li><a class="navbar-brand"><p id="submenu">CATEGORIAS</p></a></li>
               <li><a class="navbar-brand"><p id="submenu">STREAMING</p></a></li>
             </ul>
