@@ -19,6 +19,8 @@ Route::get('/', function () {
 //Pagina web videos
 //Route::get('/videos','Multimedia@getVideos');
 Route::get("/clips",'Multimedia@getVideos3');
+//Ruta para ver el video, likes, dislike, etc
+Route::get("/clips/{id}",'Multimedia@getVideoInfo');
 
 
 //Pagina web categorias (videos)

@@ -60,5 +60,10 @@ class Multimedia extends Controller
             $response->header('Content-Type', "video/mp4");
             return $response;
         }
+    public function getVideoInfo($id){
+
+        $video = Videos::find($id);
+        return view('Contenido.show',array('video'=>$video));
+    }
 
 }
