@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Session;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+Use App\Http\Controllers\auth;
 class Auth extends Controller
 {
      public function getRegistro() {
@@ -19,11 +23,12 @@ class Auth extends Controller
 		return view('auth.edit',array('Usuario'=>$Usuario, 'id'=>$id));
     }
     public function postEdit(Request $request, $id){
-         $Usuario = User::find($id);
-         $Url = ('/public/img/');
-        if( $request->has("name") || $request->has("email") || $request->has("pais") || $request->has("provincia") || $request->has("ciudad") || $request->has("direccion") || $request->has("cp") || $request->has("imagen"))
-         {	
+        
 
+         $Usuario = User::find($id);
+
+        if( $request->has("name") || $request->has("email") || $request->has("pais") || $request->has("provincia") || $request->has("ciudad") || $request->has("direccion") || $request->has("cp") || $request->has("image"))
+         {	
             $Usuario->name = $request->input("name");
             $Usuario->email = $request->input("email");
             $Usuario->pais = $request->input("pais");
@@ -31,7 +36,11 @@ class Auth extends Controller
             $Usuario->ciudad = $request->input("ciudad");
             $Usuario->direccion = $request->input("direccion");
             $Usuario->cp = $request->input("cp");
-            $Usuario->imagen = $request->input("imagen");
+            $file = $request->file('imagen');
+            $filename = $Usuario['name']. '-' .$Usuario['id']. '.jpg';
+            if($Usuario['imagen']){
+                 \Storage::disk('guardar')->put($filename, \File::get($file));
+            }
             $Usuario->save();
             Session::flash('success', '¡Campos actualizados con exito!');
             return view('auth.edit',array('Usuario'=>$Usuario, 'id'=>$id));
@@ -41,5 +50,10 @@ class Auth extends Controller
             return view('auth.edit',array('Usuario'=>$Usuario, 'id'=>$id));
   			 
     }	
+    public function getUserImage($filename)
+    {
+        $file = Storage::disk('guardar')->get($filename);
+        return new Response($file, 200);
+    }
     
 }

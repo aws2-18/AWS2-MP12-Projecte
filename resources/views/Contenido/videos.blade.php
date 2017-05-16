@@ -1,18 +1,15 @@
 @extends('layout.master')
 @section('content')
 <div class="row">
+    @include('partials._messages')
+    @foreach ($videos as $key => $video)
 
-    @foreach( $arrayVideos as $key => $video )
-    <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-
-            <h4  id="white" style="min-height:45px;margin:5px 0 10px 0">
-                {{$video->titulo}}
-            </h4>
-            <h4>
-            	{{$video->url}}
-            </h4>
-        </a>
-
+    <div class="col-xs-4 col-sm-4 col-md-4 text-center">
+            <video width="320" height="240" controls>
+                <source src="/videos/{{$video->url}}" type="video/mp4">
+             Your browser does not support the video tag.
+            </video>
+            <p id="white">{{$video->titulo}}</p>
     </div>
     @endforeach
 

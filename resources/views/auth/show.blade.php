@@ -2,10 +2,13 @@
 @section('content')
     <div class="row">
         <H1 id="white">Panel de Usuario</H1>
-        <div id="derechaEdit"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/editar/usuario/{{$Usuario->id}}'"><span class="glyphicon glyphicon-pencil"></span>Editar Usuario</button> </div> 
+        <div id="derechaEdit" class="col-md-2"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/editar/usuario/{{$Usuario->id}}'"><span class="glyphicon glyphicon-pencil"></span>Editar Usuario</button> 
+        </div> 
+        <div id="derechaEdit" class="col-md-3"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/subirvideo/{{$Usuario->id}}'"><span class="glyphicon glyphicon-pencil"></span>Subir Video</button> 
+        </div> 
         <div class="col-md-12">
-            <div class="well" style="margin-top:10px">
-                <div class="col-md-11">
+            <div class="well" style="margin-top:10px;display: inline-block;" >
+                <div class="col-md-6">
                 <dl class="dl-horizontal">
                     <dt>Nombre:</dt>
                     <dd>{{$Usuario->name}}</dd> 
@@ -35,15 +38,19 @@
                     <dd>{{$Usuario->cp}}</dd>
                 </dl>
                 </div>
+                <div class="col-md-6">
+                @if (Storage::disk('guardar')->has($Usuario->name . '-' . $Usuario->id . '.jpg'))
                 <dl class="dl-horizontal">
-                    <dd><img src="/img/{{Auth::user()->imagen}}" width="200"></dd>
-                </dl>
-                <hr>
+                    <dd><img src="{{ route('account.image', ['filename' => $Usuario->name . '-' . $Usuario->id . '.jpg'])}}" alt="" class="img-responsive" width="100%" >
 
+                    </dd>
+                </dl>
+                </div>
+                <hr>
+                @endif
             </div>
 
-        </div>
 
     </div>
-
+</div>
 @endsection

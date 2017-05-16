@@ -10,8 +10,13 @@
         <ul class="nav navbar-nav">
           <li>
             <a class="navbar-brand">
-              <li><p id="nav2">Multimedia Center</p></li>
+              <p id="nav2">Multimedia Center</p></a></li>
+              <li>
+                <form class="form-inline navbar-form pull-right">
+                </form>
+              </li>
             </a>
+
           </li>
          </ul>
       </nav>
@@ -22,9 +27,12 @@
                 <form class="form-inline navbar-form pull-right">
                   <input class="form-control" type="text" placeholder="Search" id="search">
                   <button class="btn btn-success-outline" type="submit">Search </button>
+
                 </form>
               </li>
-            </ul>
+  
+             </ul> 
+            
             
             @if(Auth::check())
             <ul class="nav navbar-nav navbar-right">
@@ -153,7 +161,7 @@
            <nav role="navigation" class="navbar-collapse">
              <ul class="nav navbar-nav">
               <li><a class="navbar-brand" href="/"><p id="submenu">INICIO</p></a></li>
-              <li><a class="navbar-brand" href="/vids"><p id="submenu">VIDEOS</p></a></li>
+              <li><a class="navbar-brand" href="/clips"><p id="submenu">VIDEOS</p></a></li>
               <li><a class="navbar-brand"><p id="submenu">CATEGORIAS</p></a></li>
               <li><a class="navbar-brand"><p id="submenu">STREAMING</p></a></li>
             </ul>

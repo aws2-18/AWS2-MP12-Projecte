@@ -10,8 +10,16 @@ class uploadController extends Controller
     	return view('upload.upload');
     }
 
-    public function store(request $request){
-    	$request->file('image');
-    	return $request->image->store('public/img');
+    public function pepito(Request $request){
+  
+    /*	return $request->image->store('guardar');
+    */
+
+
+    	$file = $request->file('image');
+
+    	$nombre = $file->getClientOriginalName();
+
+    	\Storage::disk('guardar')->put($nombre, \File::get($file));
     }
 }
