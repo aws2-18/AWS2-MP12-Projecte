@@ -50,6 +50,13 @@ Route::put('/editar/usuario/postEdit/{id}','Auth@postEdit');
 //Contacto
 Route::get('contacta', 'PagesController@getContact');
 Route::post('contacta', 'PagesController@postContact');
-//Imagen carpeta
+//Imagen avatar
 Route::get('upload','uploadController@index');
 Route::post('store','uploadController@store');
+//Galeria de fotos
+Route::get('gallery/list','GalleryController@viewGalleryList');
+Route::post('gallery/save','GalleryController@saveGallery');
+Route::get('gallery/delete/{id}','GalleryController@deleteGallery');
+Route::get('gallery/view/{id}','GalleryController@viewGalleryPics');
+Route::post('image/do-upload','GalleryController@doImageUpload');
+

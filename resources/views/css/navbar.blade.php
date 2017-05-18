@@ -32,6 +32,7 @@
             <ul class="dropdown-menu">
             
                 <li><a href="{{ url('/usuario/' . $id=Auth::user()->id) }}">Perfil</a></li>
+
       
                 <li role="separator" class="divider"></li>
                 <li> 
