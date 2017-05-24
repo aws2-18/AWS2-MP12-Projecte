@@ -47,10 +47,13 @@
                 </dl>
                 </div>
                 <hr>
+                @else
+
                 @endif
             </div>
 
 
     </div>
+</div>
 </div>
 @endsection

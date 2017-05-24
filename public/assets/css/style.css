@@ -217,7 +217,27 @@ body {
   height: 20px;
 
 }
-/* */
+/*Contenedor video */
+#contenedorvideo{
+  border: 5px solid red;
+}
+#bordevideo{
+  border: 5px solid black;
+  margin-top: 5%;
+}
+#colorvideo{
+  color: white;
+  position: relative;
+  float: left;
+}
+#centrovid{
+  position: relative;
+  float: right;
+}
+#dervid{
+  position: relative;
+  float: right;
+}
 #header {
     overflow: hidden;
     position: relative;

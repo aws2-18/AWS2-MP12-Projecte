@@ -27,7 +27,7 @@ class Auth extends Controller
 
          $Usuario = User::find($id);
 
-        if( $request->has("name") || $request->has("email") || $request->has("pais") || $request->has("provincia") || $request->has("ciudad") || $request->has("direccion") || $request->has("cp") || $request->has("image"))
+        if( $request->has("name") || $request->has("email") || $request->has("pais") || $request->has("provincia") || $request->has("ciudad") || $request->has("direccion") || $request->has("cp"))
          {	
             $Usuario->name = $request->input("name");
             $Usuario->email = $request->input("email");
@@ -36,10 +36,12 @@ class Auth extends Controller
             $Usuario->ciudad = $request->input("ciudad");
             $Usuario->direccion = $request->input("direccion");
             $Usuario->cp = $request->input("cp");
+            if($request->file("imagen")){
             $file = $request->file('imagen');
             $filename = $Usuario['name']. '-' .$Usuario['id']. '.jpg';
             if($Usuario['imagen']){
                  \Storage::disk('guardar')->put($filename, \File::get($file));
+            }
             }
             $Usuario->save();
             Session::flash('success', '¡Campos actualizados con exito!');

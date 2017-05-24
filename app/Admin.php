@@ -4,18 +4,11 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
-class User extends Authenticatable
+    
+class Admin extends Authenticatable
 {
     use Notifiable;
-    public function videos()
-    {
-        return $this->hasMany('App\Videos');
-    }
-    public function likes()
-    {
-        return $this->hasMany('App\Like');
-    }
+    protected $guard = 'admin';
 
     /**
      * The attributes that are mass assignable.

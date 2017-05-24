@@ -23,12 +23,13 @@ class DatabaseSeeder extends Seeder
             'titulo' => 'Partida epica CSGO',
             'usuario' => 'Lluis',
             'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
+            'idusuario' => '2',
             ),
         array(
             'titulo' => 'Gatos y Pepinos',
             'usuario' => 'Victor',
             'url' => '/videos/gatosvspepinos.mp4',
-            )
+            'idusuario' => '5')
         );
     /**
      * Run the database seeds.
@@ -67,6 +68,7 @@ class DatabaseSeeder extends Seeder
             $v->titulo = $video['titulo'];
             $v->usuario = $video['usuario'];
             $v->url = $video['url'];
+            $v->idusuario = $video['idusuario'];
             $v->save();
         }
     }
