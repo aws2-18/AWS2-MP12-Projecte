@@ -24,17 +24,21 @@
         });
 
     Dropzone.options.addImages = {
-        maxFilesize: 2,
+        maxFilesize: 50,
         acceptedFiles: 'image/*',
+        //maxFiles: 1, Numero de archivos que se suben
         success: function(file, response){
             if(file.status == 'success'){
                 handleDropzoneFileUpload.handleSuccess(response);
+                console.log("BIEEENNN!!!")
             }else{
                 handleDropzoneFileUpload.handleError(response);
             }
 
         }
     };
+    
+
     var handleDropzoneFileUpload = {
         handleError: function(response){
             console.log(response);
@@ -42,10 +46,12 @@
         handleSuccess: function(response){
             var baseUrl = "{{ url('/') }}";
             var imageList = $('#gallery-images ul');
-            var imageSrc = baseUrl + '/' + response.file_path;
+            //Mostrar img en view (Original o miniatura)
+            var imageSrc = baseUrl + '/gallery/images/thumbs/' + response.file_name;
             $(imageList).append('<li><a href="' + imageSrc + '" data-lightbox="mygallery" ><img src="' + imageSrc + '"></a></li>');
         }
     };
+    
 </script>
 <body>
  @include('css.navbar')

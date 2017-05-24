@@ -148,10 +148,77 @@ body {
 #panelizquierdaregistro{
   margin-top: 20%;
 }
+
 /*PANEL USUARIO*/
-#derechaEdit{
-  float: right;
+#name3{
+  height: 4%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
 }
+#email3{
+  height: 4%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
+}
+#pais3{
+  height: 4%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
+}
+#provincia3{
+  height: 4%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
+}
+#ciudad3{
+   height: 4%;
+   width: 100%;
+   background-color: black;
+   color: #757575;
+   font-size: 18px;
+   border-color: #F5353B;
+}
+#direccion3{
+  height: 4%;
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  font-size: 18px;
+  border-color: #F5353B;
+}
+#cp3{
+   height: 4%;
+   width: 100%;
+   background-color: black;
+   color: #757575;
+   font-size: 18px;
+   border-color: #F5353B;
+}
+ .btn-cssshow,
+          .btn-cssshow:hover,
+          .btn-cssshow:active {
+            color: black;
+            background-color: red;
+          }
+/*VIEW SUBIR VIDEO*/
+#modalsubirvideo{
+  background-color: grey;
+  height: 20px;
+
+}
+/* */
 #header {
     overflow: hidden;
     position: relative;
@@ -411,5 +478,4 @@ ul{
 
 /*REGISTRO CSS*/
 
-}
 

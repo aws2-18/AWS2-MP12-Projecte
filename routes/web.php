@@ -18,7 +18,9 @@ Route::get('/', function () {
 
 //Pagina web videos
 //Route::get('/videos','Multimedia@getVideos');
-Route::get("/vids",'Multimedia@getVideos');
+Route::get("/clips",'Multimedia@getVideos3');
+//Ruta para ver el video, likes, dislike, etc
+Route::get("/clips/{id}",'Multimedia@getVideoInfo');
 
 
 //Pagina web categorias (videos)
@@ -47,6 +49,15 @@ Route::get('/usuario/{id}','Auth@getPanel');
 Route::get('/editar/usuario/{id}','Auth@getEdit');
 //View a la que llamamos para que ejecute la funcion que cambia los datos
 Route::put('/editar/usuario/postEdit/{id}','Auth@postEdit');
+
+
+//View para ver formulario para subir video
+Route::get('subirvideo/{id}','Multimedia@getFormvideo');
+//View para añadir los datos
+Route::post('postUpload/','Multimedia@postUpload');
+
+
+
 //Contacto
 Route::get('contacta', 'PagesController@getContact');
 Route::post('contacta', 'PagesController@postContact');
@@ -59,4 +70,17 @@ Route::post('gallery/save','GalleryController@saveGallery');
 Route::get('gallery/delete/{id}','GalleryController@deleteGallery');
 Route::get('gallery/view/{id}','GalleryController@viewGalleryPics');
 Route::post('image/do-upload','GalleryController@doImageUpload');
+
+//Mostrar solo la Galeria
+Route::get('galeria','GalleryController@viewGalleryTodo');
+Route::get('galeria/imagenes/{id}','GalleryController@viewImagenes');
+
+//Pepito
+Route::post('pepito','uploadController@pepito');
+Route::get('/userimage/{filename}', [
+    'uses' => 'Auth@getUserImage',
+    'as' => 'account.image'
+]);
+//Videos
+Route::get('get-video/{video}', 'Multimedia@getVideo2')->name('getVideo2');
 

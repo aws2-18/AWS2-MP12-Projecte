@@ -23,11 +23,13 @@ class DatabaseSeeder extends Seeder
             'titulo' => 'Partida epica CSGO',
             'usuario' => 'Lluis',
             'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
+            'comentario' => 'Partida en csgo con AWP impresionante',
             ),
         array(
             'titulo' => 'Gatos y Pepinos',
             'usuario' => 'Victor',
             'url' => '/videos/gatosvspepinos.mp4',
+            'comentario' => 'Video de Gatos vs Pepinos',
             )
         );
     /**
@@ -67,6 +69,7 @@ class DatabaseSeeder extends Seeder
             $v->titulo = $video['titulo'];
             $v->usuario = $video['usuario'];
             $v->url = $video['url'];
+            $v->comentario = $video['comentario'];
             $v->save();
         }
     }
