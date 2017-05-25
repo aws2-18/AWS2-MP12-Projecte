@@ -7,7 +7,7 @@
 </div>
 
 <div class="row">
-
+	@include('partials._messages')
 	<div class="col-md-8" style="color:white">
 		@if ($galleries->count() > 0)
 		<table class="table table-striped table-bordered table-responsive" style="color: white">
@@ -27,7 +27,7 @@
 					</td>
 					<td>
 						<a href="{{url('gallery/view/' . $gallery->id)}}">Ver</a> /
-						<a href="{{url('gallery/delete/' . $gallery->id)}}">Eliminar</a> 
+						<a href="{{url('gallery/delete/' . $gallery->id)}}" onclick="return ConfirmarBorrar()">Eliminar</a> 
 					</td>
 				</tr>
 				@endforeach
@@ -59,5 +59,16 @@
 	</div>
 
 </div>
+	<script>
+		function ConfirmarBorrar(){
+
+			var x = confirm("¿Estas seguro que quieres eliminar la galeria?");
+			if(x)
+				return true;
+			else 
+				return false;
+		}
+		
+	</script>
 
 @stop

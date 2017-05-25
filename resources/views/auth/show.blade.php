@@ -49,43 +49,12 @@
                 </dl>
                 </div>
                 <hr>
+                @else
+
                 @endif
             </div>
 
-
     </div>
 </div>
-<div class="row">
-    <div class="col-md-6">
-        <div class="col-md-6" style="color: white">
-            <p><b>Nombre:</b></p>
-            <p><b>Email:</b></p>
-            <p><b>Pais:</b></p>
-            <p><b>Provincia:</b></p>
-            <p><b>Ciudad:</b></p>
-            <p><b>Direccion:</b></p>
-            <p><b>Codigo postal:</b></p>
-        </div>  
-        <div class="col-md-6" style="color: white; text-align: left;">
-            <p><b>{{$Usuario->name}}</b></p>
-            <p><b>{{$Usuario->email}}</b></p>
-            <p><b>{{$Usuario->pais}}</b></p>
-            <p><b>{{$Usuario->provincia}}</b></p>
-            <p><b>{{$Usuario->ciudad}}</b></p>
-            <p><b>{{$Usuario->direccion}}</b></p>
-            <p><b>{{$Usuario->cp}}</b></p>
-        </div>    
-    </div>
-                    <div class="col-md-6">
-                @if (Storage::disk('guardar')->has($Usuario->name . '-' . $Usuario->id . '.jpg'))
-                <dl class="dl-horizontal">
-                    <dd><img src="{{ route('account.image', ['filename' => $Usuario->name . '-' . $Usuario->id . '.jpg'])}}" alt="" class="img-responsive" width="50%" >
-
-                    </dd>
-                </dl>
-                </div>
-                <hr>
-                @endif
-
 </div>
 @endsection

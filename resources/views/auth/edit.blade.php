@@ -38,7 +38,8 @@
             </div>
             <div>
             <label id="white">Seleccionar archivo</label>
-            <input type="file" name="imagen" class="form-group" value="{{$Usuario->imagen}}" required id="white">
+            <input type="file" name="imagen" class="form-group" value="{{$Usuario->imagen}}" id="white">
+
             </div>
             <br>
             <input type="submit" value="Actualizar perfil" class="btn btn-cssshow">

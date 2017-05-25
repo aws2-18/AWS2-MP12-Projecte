@@ -164,6 +164,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         'Intervention\Image\ImageServiceProvider',
 
+    
+
         /*
          * Package Service Providers...
          */

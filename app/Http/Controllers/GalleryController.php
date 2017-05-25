@@ -121,7 +121,7 @@ class GalleryController extends Controller
 		//delete the BD records
 		$currentGallery->images()->delete();
 		$currentGallery->delete();
-	
+		Session::flash('success','La galeria ha sido eliminada correctamente.');
 		return redirect()->back();
 	}
 /*

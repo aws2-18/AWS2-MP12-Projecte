@@ -1,0 +1,38 @@
+/* make sidebar nav vertical */ 
+ .container{
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  body{
+    background-color: grey;
+  }
+  #infovideosadmin{
+    border: 2px solid red;
+  }
+  #cssvideos{
+    color: black;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+    border: 3px solid black;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+    border: 1px solid black;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li p{
+    margin-left: 13px;
+  }
+  .sidebar-nav .navbar li a {
+   
+  }
+}

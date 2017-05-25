@@ -27,7 +27,7 @@
 					</td>
 					<td>
 						<a href="{{url('galeria/imagenes/' . $gallery->id)}}">Ver</a>
-						<a href="{{url('gallery/delete/' . $gallery->id)}}">Eliminar</a>  
+						<!--<a href="{{url('gallery/delete/' . $gallery->id)}}">Eliminar</a> --> 
 						
 						
 					</td>

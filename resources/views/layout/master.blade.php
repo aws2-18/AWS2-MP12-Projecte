@@ -60,3 +60,6 @@
 </div>
 @include('css.footer')
 </body>
+<script src="{{ URL::to('/src/js/app.js')}}"></script>
+</body>
+
