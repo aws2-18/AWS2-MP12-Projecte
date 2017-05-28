@@ -34,8 +34,9 @@
 			</tbody>
 		</table>
 		@endif 
+		<input style="color: black" type="button" onclick="window.location.href='{{ url('/usuario/' . $id=Auth::user()->id) }}'" value="Volver al perfil" class="btn btn-dangerous">
 	</div>
-
+	
 	<div class="col-md-4">
 		@if(count($errors) > 0)
 			<div class="alert alert-danger">
@@ -56,8 +57,8 @@
 			</div><br>
 			<button class="btn btn-primary">Guardar</button>
 		</form>
+		
 	</div>
-
 </div>
 	<script>
 		function ConfirmarBorrar(){

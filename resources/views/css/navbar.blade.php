@@ -22,7 +22,7 @@
       </nav>
           <nav role="navigation" class="navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a class="navbar-brand"><p id="nav2">Logo</p></a></li>
+              <li id="logoli"><a class="navbar-brand" href="/"><img id="logo" src="/images/logo.png" width="30%"></a></li>
               <li>
                 <form class="form-inline navbar-form pull-right">
                   <input class="form-control" type="text" placeholder="Search" id="search">

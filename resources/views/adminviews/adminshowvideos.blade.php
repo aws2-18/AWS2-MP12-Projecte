@@ -2,26 +2,24 @@
 @section('content')
 <div class="row">
     @include('partials._messages')
-
-		<div class="col-md-8">
-
-		           <h1>Titulo: {{ $video->titulo }}</h1> 
+		<div class="col-md-6">
+		    <h3>Titulo: {{ $video->titulo }}</h3> 
+		    <h3>Usuario: {{ $video->usuario}}</h3>
 
 			<p class="lead"><video width="320" height="240" controls>
                 <source src="/videos/{{$video->url}}" type="video/mp4">
              Your browser does not support the video tag.
             </video></p>
-            <p class="lead">Usuario: {{ $video->usuario}}</h3></p>
 		</div>
 
 		<div class="col-md-4">
 			<div class="well">
-				<dl class="dl-horizontal">
+				<dl class="dl-vertical" style="text-align: center;">
 					<dt>Create At:</dt>
 					<dd>{{ date('M j, Y h:ia', strtotime($video->created_at)) }}</dd>
 				</dl>
 
-				<dl class="dl-horizontal">
+				<dl class="dl-vertical" style="text-align: center;">
 					<dt>Last Updated:</dt>
 					<dd>{{ date('M j, Y h:ia', strtotime($video->updated_at)) }}</dd>
 				</dl>
@@ -29,7 +27,6 @@
 				<div class="row">
 					<div class="col-sm-6">
 
-						
 					<a href="{{ route('admin.videos.edit', $video->id)}}" class="btn btn-primary btn-block">Edit</a>
 					</div>
 					<div class="col-sm-6">
@@ -55,7 +52,5 @@
 				return false;
 		}
 	</script>
-
-
 
 @endsection

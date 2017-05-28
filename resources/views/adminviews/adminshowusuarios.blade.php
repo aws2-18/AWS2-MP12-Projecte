@@ -5,7 +5,6 @@
 
 		<div class="col-md-8">
 
-		           <h1>Nombre: {{ $user->name }}</h1> 
 			
             <p class="lead">Nombre: {{ $user->name}}</p>
             <p class="lead">Email: {{ $user->email}}</p>

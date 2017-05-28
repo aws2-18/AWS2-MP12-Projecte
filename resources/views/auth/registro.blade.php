@@ -7,24 +7,17 @@
 
 	        <p id="haymuchomas">¡HAY MUCHO MÁS EN PUVIK DE LO QUE CREES! </p>
 	        <div class="col-md-4">
-	        <p id="ventajas">Subir Videos</p>
+	        <p id="ventajas"><span class="glyphicon glyphicon-picture"></span> Subir Videos</p>
 	        </div>
 	        <div class="col-md-4">
-	        <p id="ventajas">Like/Dislike</p>
+	        <p id="ventajas"><span class="glyphicon glyphicon-thumbs-up"></span> Like <span class="glyphicon glyphicon-thumbs-down"></span> Dislike</p>
 	        </div>
 	        <div class="col-md-4">
-	        <p id="ventajas">Crear galeria</p>
+	        <p id="ventajas"><span class="glyphicon glyphicon-picture"></span> Crear galeria</p>
 	        </div>
 	        <div class="col-md-4">
-	        <p id="ventajas">Perfil Propio</p>
+	        <p id="ventajas"><span class="glyphicon glyphicon-user"></span> Perfil Propio</p>
 	        </div>
-	        <div class="col-md-4">
-	        <p id="ventajas">Lorem Ipsum</p>
-	        </div>
-	        <div class="col-md-4">
-	       	<p id="ventajas">Lorem Ipsum</p>
-	        </div>
-
 	      </div>
 	      <div class="col-md-6">
 

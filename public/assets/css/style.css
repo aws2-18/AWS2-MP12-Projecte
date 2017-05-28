@@ -57,8 +57,17 @@ body {
 }
 #panelusuarioletra{
   color: red;
+  margin-bottom: 2%;
 }
-
+#usupanel dl dt {
+  text-align: left;
+}
+#usupanel dd {
+  text-align: left;
+}
+#imageusu{
+  margin-top: 5%; 
+}
 /*SLIDER*/
     .swiper-container {
         width:  auto;
@@ -403,6 +412,8 @@ body {
 #botonbusqueda{
   background-color: red;
 }
+/*PANEL USUARIO*/
+
 body{
   background-color: #2E2E2E;
 }
@@ -704,6 +715,10 @@ ul{
   padding-right: 60px;
 }
 
-/*REGISTRO CSS*/
-
-
+/*Logo - Submenu - ProfilePic */
+#logo{
+  margin-top: -10%;
+}
+#logoli{
+  margin-right: -10%;
+}

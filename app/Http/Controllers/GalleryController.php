@@ -12,16 +12,20 @@ use Session;
 
 class GalleryController extends Controller
 {
+	/*
 	public function __construct(){
 
 		$this->middleware('auth');
-	}
+	}*/
 
 	public function viewGalleryList(){
 
-		$galleries = Gallery::where('created_by', Auth::user()->id)->get();
-
-		return view('gallery.gallery')->with('galleries',$galleries);
+		if (Auth::check()) {
+			$galleries = Gallery::where('created_by', Auth::user()->id)->get();
+			return view('gallery.gallery')->with('galleries',$galleries);
+    
+		}else
+			return redirect('/');
 	}
 	public function viewGalleryTodo(){
 
