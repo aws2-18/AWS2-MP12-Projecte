@@ -5,7 +5,7 @@
 	    <div class="row">
 	      <div class="col-md-6" id="panelizquierdaregistro">
 
-	        <p id="haymuchomas">¡HAY MUCHO MÁS EN VIDEOSNET DE LO QUE CREES! </p>
+	        <p id="haymuchomas">¡HAY MUCHO MÁS EN PUVIK DE LO QUE CREES! </p>
 	        <div class="col-md-4">
 	        <p id="ventajas">Subir Videos</p>
 	        </div>
@@ -13,16 +13,16 @@
 	        <p id="ventajas">Like/Dislike</p>
 	        </div>
 	        <div class="col-md-4">
-	        <p id="ventajas">Enviar Comentarios</p>
+	        <p id="ventajas">Crear galeria</p>
 	        </div>
 	        <div class="col-md-4">
 	        <p id="ventajas">Perfil Propio</p>
 	        </div>
 	        <div class="col-md-4">
-	        <p id="ventajas">Hola5</p>
+	        <p id="ventajas">Lorem Ipsum</p>
 	        </div>
 	        <div class="col-md-4">
-	       	<p id="ventajas">Hola6</p>
+	       	<p id="ventajas">Lorem Ipsum</p>
 	        </div>
 
 	      </div>

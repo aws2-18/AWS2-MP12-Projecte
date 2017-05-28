@@ -11,55 +11,21 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
 <script type="text/javascript" src="{{ asset('js/lightbox.min.js')}}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {  
-            console.log("El documento está listo"); 
-            var sideslider = $('[data-toggle=collapse-side]');
-            var sel = sideslider.attr('data-target');
-            var sel2 = sideslider.attr('data-target-2');
-            sideslider.click(function(event){
-                $(sel).toggleClass('in');
-                $(sel2).toggleClass('out');
-            });
-        });
-
-    Dropzone.options.addImages = {
-        maxFilesize: 50,
-        acceptedFiles: 'image/*',
-        //maxFiles: 1, Numero de archivos que se suben
-        success: function(file, response){
-            if(file.status == 'success'){
-                handleDropzoneFileUpload.handleSuccess(response);
-                console.log("BIEEENNN!!!")
-            }else{
-                handleDropzoneFileUpload.handleError(response);
-            }
-
-        }
-    };
-    
-
-    var handleDropzoneFileUpload = {
-        handleError: function(response){
-            console.log(response);
-        },
-        handleSuccess: function(response){
-            var baseUrl = "{{ url('/') }}";
-            var imageList = $('#gallery-images ul');
-            //Mostrar img en view (Original o miniatura)
-            var imageSrc = baseUrl + '/gallery/images/thumbs/' + response.file_name;
-            $(imageList).append('<li><a href="' + imageSrc + '" data-lightbox="mygallery" ><img src="' + imageSrc + '"></a></li>');
-        }
-    };
-    
-</script>
+<!--SLIDER-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <body>
  @include('css.navbar')
 <div class="container">
 @yield('content')
 </div>
 @include('css.footer')
-</body>
 <script src="{{ URL::to('/src/js/app.js')}}"></script>
+
 </body>
 

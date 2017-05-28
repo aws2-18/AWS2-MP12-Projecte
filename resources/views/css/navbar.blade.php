@@ -10,7 +10,7 @@
         <ul class="nav navbar-nav">
           <li>
             <a class="navbar-brand">
-              <p id="nav2">Multimedia Center</p></a></li>
+              <p id="nav2">Puvik</p></a></li>
               <li>
                 <form class="form-inline navbar-form pull-right">
                 </form>
@@ -26,7 +26,7 @@
               <li>
                 <form class="form-inline navbar-form pull-right">
                   <input class="form-control" type="text" placeholder="Search" id="search">
-                  <button class="btn btn-success-outline" type="submit">Search </button>
+                  <button class="btn btn-success-outline" type="submit" id="botonbusqueda">Search </button>
 
                 </form>
               </li>

@@ -5,32 +5,6 @@ use App\User;
 use App\Videos;
 class DatabaseSeeder extends Seeder
 {
-     private $arrayUsers = array(
-        array(
-            'name' => 'Lluis',
-            'email' => 'lluis_96_13@hotmail.com',
-            'password' => 'Admin1',
-            'pais' => 'España',
-            'provincia' => 'Barcelona',
-            'ciudad' => 'Sant Joan Despi',
-            'direccion' => 'Carrer Major',
-            'cp' => '08970',
-            'imagen' => 'foto.png',
-            )
-        );
-     private $arrayVideos = array(
-        array(
-            'titulo' => 'Partida epica CSGO',
-            'usuario' => 'Lluis',
-            'url' => 'https://www.youtube.com/watch?v=ODlmDbtZy8c',
-            'idusuario' => '2',
-            ),
-        array(
-            'titulo' => 'Gatos y Pepinos',
-            'usuario' => 'Victor',
-            'url' => '/videos/gatosvspepinos.mp4',
-            'idusuario' => '5')
-        );
     /**
      * Run the database seeds.
      *

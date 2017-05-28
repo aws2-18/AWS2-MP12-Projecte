@@ -12,7 +12,7 @@
 
                 <form action="{{ url('contacta') }}" method="POST" class="contact_form" name="contact_form">
                     {{ csrf_field() }}
-                <ul>
+                <ul  id="contactaradmin">
                   <li>
                     <label name="nombre" id="white">Nombre:</label>
                     <input id="nombre" name="nombre" class="form-control" required>
@@ -41,6 +41,7 @@
                   <li>
                   <button class="btn btn-enviarcorreo" type="submit">Enviar correo</button>
                   </li>
+                  </ul>
                   </form>
             </div>
             <div class="col-md-6">

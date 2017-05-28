@@ -67,7 +67,8 @@ class Multimedia extends Controller
     public function getVideoInfo($id){
 
         $video = Videos::find($id);
-        return view('Contenido.show',array('video'=>$video));
+        $Usuario = User::find($id);
+        return view('Contenido.show',array('video'=>$video, 'Usuario'=>$Usuario));
     }
     
     public function postLikePost(Request $request)

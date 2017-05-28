@@ -1,32 +1,5 @@
 @extends('layout.master')
 @section('content')
-<style type="text/css">
-	#images{
-		border: 2px solid black;
-	}
-	#gallery-images {
-		
-	}
-	#gallery-images img{
-		width: 240px;
-		height: 180px;
-		border: 2px solid black;
-		margin-bottom: 15px;
-	}
-	/*
-	#gallery-images ul{
-		margin: 0;
-		padding: 0;
-	}
-	*/
-	#gallery-images li{
-		
-		list-style: none;
-		float: left;
-		padding-right: 15px;
-	}
-
-</style>
 
 <div class="row">
 	<div class="col-md-12" style="color:white">

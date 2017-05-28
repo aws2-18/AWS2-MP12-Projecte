@@ -1,14 +1,14 @@
 @extends('layout.master')
 @section('content')
-    <div class="row">
-        <H1 id="white">Panel de Usuario</H1>
-        <div id="derechaEdit" class="col-md-2"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/editar/usuario/{{$Usuario->id}}'"><span class="glyphicon glyphicon-pencil"></span>Editar Usuario</button> 
+   <center> <div class="row">
+        <H1 id="panelusuarioletra">Panel de Usuario</H1>
+        <div id="botonperfil" class="col-md-5"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/editar/usuario/{{$Usuario->id}}'"><span class="glyphicon glyphicon-user"></span>Editar Usuario</button> 
         </div> 
-        <div id="derechaEdit" class="col-md-3"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/subirvideo/{{$Usuario->id}}'"><span class="glyphicon glyphicon-pencil"></span>Subir Video</button> 
+        <div id="botonperfil" class="col-md-2"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/subirvideo/{{$Usuario->id}}'"><span class="glyphicon glyphicon-facetime-video"></span>Subir Video</button> 
         </div> 
-            <div id="derechaEdit" class="col-md-3"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/gallery/list'"><span class="glyphicon glyphicon-pencil"></span>Crear Galeria</button> 
+            <div id="botonperfil" class="col-md-5"><button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/gallery/list'"><span class="glyphicon glyphicon-back"></span>Crear Galeria</button> 
         </div> 
-        <div class="col-md-12">
+        <div class="col-md-12" id="paneluser">
             <div class="well" style="margin-top:10px;display: inline-block;" >
                 <div class="col-md-6">
                 <dl class="dl-horizontal">
@@ -56,5 +56,6 @@
 
     </div>
 </div>
+</center>
 </div>
 @endsection
