@@ -46,7 +46,7 @@
         </form>
         
         <input type="button" onclick="window.location.href='{{ url('/usuario/' . $id=Auth::user()->id) }}'" value="Volver al perfil" class="btn btn-dangerous">
-
+        
         </div>
 
         <!--

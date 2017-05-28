@@ -43,7 +43,6 @@ $('.like').on('click', function(event) {
     });
 
     $(document).ready(function() {  
-            console.log("El documento está listo"); 
             var sideslider = $('[data-toggle=collapse-side]');
             var sel = sideslider.attr('data-target');
             var sel2 = sideslider.attr('data-target-2');
@@ -60,7 +59,6 @@ $('.like').on('click', function(event) {
         success: function(file, response){
             if(file.status == 'success'){
                 handleDropzoneFileUpload.handleSuccess(response);
-                console.log("BIEEENNN!!!")
             }else{
                 handleDropzoneFileUpload.handleError(response);
             }
@@ -69,18 +67,6 @@ $('.like').on('click', function(event) {
     };
     
 
-    var handleDropzoneFileUpload = {
-        handleError: function(response){
-            console.log(response);
-        },
-        handleSuccess: function(response){
-            var baseUrl = "{{ url('/') }}";
-            var imageList = $('#gallery-images ul');
-            //Mostrar img en view (Original o miniatura)
-            var imageSrc = baseUrl + '/gallery/images/thumbs/' + response.file_name;
-            $(imageList).append('<li><a href="' + imageSrc + '" data-lightbox="mygallery" ><img src="' + imageSrc + '"></a></li>');
-        }
-    };
      
 
 //videoId = $(this).data("video-id"); // event.target.parentNode.parentNode.dataset['videoid'];

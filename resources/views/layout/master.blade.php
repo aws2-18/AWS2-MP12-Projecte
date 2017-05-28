@@ -19,6 +19,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+
+<script>
+
+    var handleDropzoneFileUpload = {
+        handleError: function(response){
+            console.log(response);
+        },
+        handleSuccess: function(response){
+            var baseUrl = "{{ url('/') }}";
+            var imageList = $('#gallery-images ul');
+            //Mostrar img en view (Original o miniatura)
+            var imageSrc = baseUrl + '/gallery/images/thumbs/' + response.file_name;
+            $(imageList).append('<li><a href="' + imageSrc + '" data-lightbox="mygallery" ><img src="' + imageSrc + '"></a></li>');
+        }
+    };
+     
+
+</script>
 <body>
  @include('css.navbar')
 <div class="container">

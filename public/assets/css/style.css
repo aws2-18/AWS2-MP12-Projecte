@@ -420,31 +420,64 @@ body{
 
       @media screen and (max-width: 768px) {
         /*Modal inicio sesion*/
-        #iniciarsesion{
-          width: 150px;
+        #registro{
+          margin-left: 150px;
         }
-        #myModal{
+        #supreg{
+          margin-left: 300px;
+        }
+        #iniciarsesion{
+          font-size: 12px;
+          width: 150px;
+          height: 30px;
+          margin-left: 150px;
+          margin-top: 50px;
+        }
+        #remember2{
+          margin-left: 130px;
+        }
+        .navbar-brand{
           width: 300px;
         }
+        #myModal{
+          width: 400px;
+        }
         .modal-dialog{
-          width: 350px;
+          width: 400px;
         }
         #conolog{
-          width: 100px;
+          width: 60%;
+          font-size: 12px;
+          color: red;
         }
         #email{
-          width: 30px;
+          width: 160px;
+          margin-left: 150px;
+          font-size: 8px;
+        }
+        #password{
+          width: 160px;
+          margin-left: 150px;
+        }
+        #remember{
+          width: 160px;
+          margin-left: 150px;
         }
         #content{
-          width: 200px;
+          width: 150%;
         }
         #botonperfil{
           padding-top: 10px
         }
+        .panel-body{
+          width: 200px;
+        }
         /* View videos*/
-           #videos2{
-            margin-top: 20px;
-           }
+        #videos3{
+          margin-left: 5px;
+          width: 300px;
+          height: 200px;
+        }
         /* Panel user */
         #derechaEdit{
           padding-top: 10px;
@@ -471,7 +504,7 @@ body{
           margin-top: -100px;
         }
        #videoviewvideo{
-        width: 120%;
+        width: 110%;
        }
             .swiper-container {
         width:  auto;
