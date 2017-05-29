@@ -1,8 +1,8 @@
 @extends('layout.masteradmin')
 @section('content')
 <div class="row">
-    @include('partials._messages')
 		<div class="col-md-6">
+	    @include('partials._messages')
 		    <h3>Titulo: {{ $video->titulo }}</h3> 
 		    <h3>Usuario: {{ $video->usuario}}</h3>
 

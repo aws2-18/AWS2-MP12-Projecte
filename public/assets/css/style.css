@@ -6,6 +6,9 @@ body {
       pre {
           tab-size: 8;
       }
+.li{
+  list-style: none;
+}
 /* VIEW VIDEOS*/
 #videos3{
   margin-left: 115px;

@@ -1,11 +1,8 @@
 @extends('layout.masteradmin')
 @section('content')
 <div class="row">
-    @include('partials._messages')
-
 		<div class="col-md-8">
-
-			
+    @include('partials._messages')			
             <p class="lead">Nombre: {{ $user->name}}</p>
             <p class="lead">Email: {{ $user->email}}</p>
             <p class="lead">Pais: {{ $user->pais}}</p>

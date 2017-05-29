@@ -1,10 +1,8 @@
 @extends('layout.masteradmin')
 @section('content')
 <div class="row">
-    @include('partials._messages')
-
 		<div class="col-md-8">
-
+		    @include('partials._messages')
 		           <h1>Titulo: {{ $gallery->name }}</h1> 
 
 	

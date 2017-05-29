@@ -1,4 +1,4 @@
-
+<title>Puvik</title>
 <div id="header">
 <header role="banner" class="navbar navbar-inverse" id="navcolor">
   <div class="container">
